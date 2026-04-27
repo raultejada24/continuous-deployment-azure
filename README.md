@@ -36,4 +36,8 @@ Podemos borrar la aplicación con el siguiente comando:
 ```
 az container delete -n posts-app -g posts-group --yes
 ```
+mvn spring-boot:build-image \
+-DskipTests \
+-Dspring-boot.build-image.imageName=raultejada24/posts:v1
 
+docker push raultejada24/posts:v1
