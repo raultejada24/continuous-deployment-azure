@@ -44,3 +44,6 @@ mvn spring-boot:build-image \ -DskipTests \ -Dspring-boot.build-image.imageName=
 
 docker push raultejada24/posts:v1
 ```
+Publicamos en Azure mediante Grupo de Recursos y Azure Container Apps desde la imagen de DockerHub, mediante la web de azure, pero será mejor hacerlo mediante un comando de Azure.
+
+
