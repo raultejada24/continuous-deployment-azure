@@ -46,4 +46,6 @@ docker push raultejada24/posts:v1
 ```
 Publicamos en Azure mediante Grupo de Recursos y Azure Container Apps desde la imagen de DockerHub, mediante la web de azure, pero será mejor hacerlo mediante un comando de Azure.
 
+Se puede hacer desde la terminal haciendo az login, luego az group create --name posts-group --location westeurope, luego az containerapp up --name posts-app --resource-group posts-group --location westeurope --image raultejada24/posts:v1 --target-port 8080 --ingress external
+
 
